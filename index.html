@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Alexander Zelaya</title>
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./Style/styles.css" />
+  </head>
+  <body>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">DevAlexSanz</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="./Images/hero.jpg" alt="" />
+        </div>
+        <h1>Alexander Zelaya</h1>
+        <h2>Desarrollador Back-End JavaScript</h2>
+        <div class="redes">
+          <a href="https://twitter.com/DevAlexSanz" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://github.com/CodeAlexSanz" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/alexanderzelaya" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2 class="h2-color">SOBRE MI</h2>
+        <p>
+          Bienvenido a mi mundo digital. Soy un apasionado desarrollador backend
+          con un amor infinito por la creación de soluciones de software
+          innovadoras. Mi experiencia en Javascript me permite tejer código
+          mágico para impulsar aplicaciones web y servicios de manera efectiva y
+          eficiente.
+        </p>
+        <p>
+          Con un compromiso inquebrantable hacia la excelencia técnica, mi
+          objetivo principal es abrazar desafíos técnicos y transformarlos en
+          soluciones de alto rendimiento que impulsan el éxito del equipo de
+          desarrollo.
+        </p>
+        <p>
+          ¿Estás interesado en conocer más sobre mi experiencia? ¡No dudes en
+          descargar mi CV!
+        </p>
+        <a href="./Assets/cv.pdf" download="cv.pdf">
+          <button class="btn-cv">
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2 class="h2-color">HABILIDADES</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img class="skill-logo" src="./Icons/js.ico" alt="JavaScript" />
+          <h3 class="skill-name">JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <img class="skill-logo" src="./Icons/nodejs.ico" alt="Node.js" />
+          <h3 class="skill-name">Node.js</h3>
+        </div>
+        <div class="skill-card">
+          <img class="skill-logo" src="./Icons/express.ico" alt="Express.js" />
+          <h3 class="skill-name">Express.js</h3>
+        </div>
+        <div class="skill-card">
+          <img class="skill-logo" src="./Icons/jwt.ico" alt="JSON Web Token" />
+          <h3 class="skill-name">JSON Web Token</h3>
+        </div>
+        <div class="skill-card">
+          <img class="skill-logo" src="./Icons/mongodb.ico" alt="MongoDB" />
+          <h3 class="skill-name">MongoDB</h3>
+        </div>
+        <div class="skill-card">
+          <img class="skill-logo" src="./Icons/mysql.ico" alt="MySQL" />
+          <h3 class="skill-name">MySQL</h3>
+        </div>
+        <div class="skill-card">
+          <img class="skill-logo" src="./Icons/github.ico" alt="GitHub" />
+          <h3 class="skill-name">GitHub</h3>
+        </div>
+        <div class="skill-card">
+          <img class="skill-logo" src="./Icons/vscode.ico" alt="VSCode" />
+          <h3 class="skill-name">Visual Studio Code</h3>
+        </div>
+        <div class="skill-card">
+          <img class="skill-logo" src="./Icons/docker.ico" alt="Docker" />
+          <h3 class="skill-name">Docker</h3>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2 class="h2-color">PROYECTOS</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="./Images/davida.png" alt="" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>DaVida API</h3>
+                <p>API REST orientada al sistema médico</p>
+                <div class="tecnologías">
+                  <span
+                    ><img src="./Icons/js.ico" alt="JavaScript" />
+                    JavaScript</span
+                  >
+                  <span
+                    ><img src="./Icons/express.ico" alt="Express.js" />
+                    Express.js</span
+                  >
+                  <span
+                    ><img src="./Icons/mongodb.ico" alt="MongoDB" />
+                    MongoDB</span
+                  >
+                  <span
+                    ><img src="./Icons/jwt.ico" alt="JWT" /> JSON Web
+                    Token</span
+                  >
+                  <span
+                    ><img src="./Icons/nodejs.ico" alt="Node.JS" />
+                    Node.js</span
+                  >
+                  <span
+                    ><img src="./Icons/github.ico" alt="GitHub" /> GitHub</span
+                  >
+                </div>
+                <a
+                  href="https://github.com/CodeAlexSanz/DaVidaAPI"
+                  class="boton-github"
+                  target="_blank"
+                  >Ver en GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./Images/api-template-alexsanz.png" alt="" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>api-template-alexsanz</h3>
+                <p>
+                  Ejemplo y plantilla de una API REST de JavaScript para
+                  comenzar tus API's
+                </p>
+                <div class="tecnologías">
+                  <span
+                    ><img src="./Icons/js.ico" alt="JavaScript" />
+                    JavaScript</span
+                  >
+                  <span
+                    ><img src="./Icons/express.ico" alt="Express.js" />
+                    Express.js</span
+                  >
+                  <span
+                    ><img src="./Icons/mongodb.ico" alt="MongoDB" />
+                    MongoDB</span
+                  >
+                  <span
+                    ><img src="./Icons/nodejs.ico" alt="Node.JS" />
+                    Node.js</span
+                  >
+                </div>
+                <a
+                  href="https://www.npmjs.com/package/api-template-alexsanz"
+                  class="boton-github"
+                  target="_blank"
+                  >Ver en NPM</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2 class="h2-color">CONTACTO</h2>
+        <div class="fila">
+          <div class="col">
+            <form id="formulario-contacto">
+              <input type="text" id="nombre" placeholder="Tu Nombre" />
+              <input
+                type="text"
+                id="telefono"
+                placeholder="Número telefónico"
+              />
+              <input
+                type="email"
+                id="correo"
+                placeholder="Dirección de correo"
+              />
+              <input type="text" id="tema" placeholder="Tema" />
+              <textarea
+                id="mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <button
+                id="button-form"
+                class="buttonform"
+                type="button"
+                onclick="enviarFormulario()"
+              >
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="./Script/script.js"></script>
+    <script type="text/javascript" src="./Utils/email.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init('B5YEhH156b7da60Ap');
+    </script>
+  </body>
+</html>
